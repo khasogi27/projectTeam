@@ -1,5 +1,6 @@
 # Digital Talent Scholarship Online Academy X Progate
 ## projectTeam [Kelas PRO-2 Tim-E30 & E31](https://discord.gg/pUd6zc)
+## Link : [DEMO](https://khasogi27.github.io/projectTeam/)
 #
 # "Tugas Membuat halaman web modern dan responsif!"
 ## Dengan Halaman Web memiliki 6 komponen:
