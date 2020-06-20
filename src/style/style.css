@@ -6,6 +6,10 @@ body {
 
 /* header */
 
+header {
+    background-color: black;
+}
+
 .navbar-fixed {
     position: absolute;
     z-index: 999999999
@@ -13,7 +17,7 @@ body {
 
 nav ul a:active {
     background-color: #fed136;
-    border-radius: 3px;
+    border-radius: 50px;
 
 }
 
@@ -83,7 +87,7 @@ nav ul a:active {
 }
 
 .timeline .timeline-event .timeline-content {
-    border-radius: 25px;
+    border-radius: 50px;
     position: relative;
     width: calc(40% - 50px);
 }
@@ -134,7 +138,7 @@ nav ul a:active {
     background: #d2d2d2;
     top: calc(50% - 20px);
     right: calc(50% - 20px);
-    border-radius: 50%;
+    border-radius: 50px;
     text-align: center;
     cursor: default;
 }
@@ -181,25 +185,50 @@ nav ul a:active {
         text-align: center;
     }
 
+    img .animasi {
+        width: 25%;
+        height: 25%;
+    }
+
 }
 
 /* animasi */
 
-@keyframes loading {
+@keyframes example {
     0% {
-        transform: rotate(deg);
+        left: 0%;
+        top: 0%;
+    }
+
+    25% {
+        left: 40%;
+        top: 0%;
+    }
+
+    50% {
+        left: 500%;
+        top: 0%;
+    }
+
+    75% {
+        left: 0%;
+        top: 0%;
     }
 
     100% {
-        transform: rotate(360deg);
+        left: 0%;
+        top: 0%;
     }
 }
 
+/* The element to apply the animation to */
 .animasi {
-    border-radius: 50%;
-    animation: loading 10s linear infinite;
-    width: 30%;
-    height: 30%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 /* tambahan */
@@ -207,9 +236,14 @@ nav ul a:active {
 .btn,
 .waves-effect {
     border-radius: 50px;
+    margin-top: 50px;
 }
 
 .waves-effect:hover,
 .btn:hover {
     color: black;
+}
+
+.fontF {
+    font-family: Arial, Helvetica, sans-serif;
 }
