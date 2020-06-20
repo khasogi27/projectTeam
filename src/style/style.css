@@ -146,7 +146,7 @@ nav ul a:active {
 
 /* responsif */
 
-@media (max-width: 600px) {
+@media (max-width: 670px) {
     .timeline .timeline-event .timeline-content {
         width: calc(100% - 70px);
     }
@@ -172,7 +172,7 @@ nav ul a:active {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
     .md-screen {
         left: 0;
         right: 0;
@@ -197,9 +197,9 @@ nav ul a:active {
 
 .animasi {
     border-radius: 50%;
+    animation: loading 10s linear infinite;
     width: 30%;
     height: 30%;
-    animation: loading 10s linear infinite;
 }
 
 /* tambahan */
@@ -210,6 +210,6 @@ nav ul a:active {
 }
 
 .waves-effect:hover,
-.btn:hover{
+.btn:hover {
     color: black;
 }
