@@ -4,6 +4,8 @@ body {
     scroll-behavior: smooth;
 }
 
+/* header */
+
 .navbar-fixed {
     position: absolute;
     z-index: 999999999
@@ -67,6 +69,8 @@ nav ul a:active {
 .nav-button {
     text-transform: uppercase;
 }
+
+/* profile */
 
 .timeline {
     position: relative;
@@ -179,6 +183,25 @@ nav ul a:active {
 
 }
 
+/* animasi */
+
+@keyframes loading {
+    0% {
+        transform: rotate(deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animasi {
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    animation: loading 10s linear infinite;
+}
+
 /* tambahan */
 
 .btn,
@@ -187,6 +210,6 @@ nav ul a:active {
 }
 
 .waves-effect:hover,
-.btn:hover {
+.btn:hover{
     color: black;
 }
