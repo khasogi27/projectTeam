@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
     <link rel="stylesheet" href="src/style/style.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Pacifico|Montserrat|Gugi">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 
 <body>
-    <!-- header -->
+
     <header class="navbar-fixed mt-20">
-        <nav class="transparent z-depth-0">
+        <nav class=" z-depth-0">
             <div class="nav-wrapper">
                 <div class="row">
                     <div class="col s12">
@@ -23,6 +25,7 @@
                         <ul class="right hide-on-med-and-down mr" style="font-family: 'Montserrat'">
                             <li class="nav-button"><a href="#about">ABOUT</a></li>
                             <li class="nav-button"><a href="#profile">PROFILE</a></li>
+                            <li class="nav-button"><a href="#portofolio">POTOFOLIO</a></li>
                             <li class="nav-button"><a href="#comment">COMMENT</a></li>
                         </ul>
                     </div>
@@ -30,7 +33,8 @@
             </div>
         </nav>
     </header>
-
+    
+     
     <!-- about -->
     <div class="main title" id="about">
         <div style="font-family: 'Montserrat';">
@@ -128,6 +132,99 @@
         </div>
     </div> <br> <Br>
 
+    <!--Porto-->
+    <div class="porto-wrapper" id="portofolio">
+        <div class="container">
+            <div class="porto-heading">
+                <div class="center mt-12" class="section scrollspy" id="profile"><br>
+                    <h3 style="font-family: Gugi;">Portofolio</h3>
+                </div>
+            </div>
+
+            <div class="porto-contents" style="font-family: Gugi;">
+                <div class="content">
+                    <div class="content-icon">
+
+                            <img class="content-img"  src="src/img/portfolio-1.jpg">
+                            <div class="porto-type">WEB</div>
+
+                    </div>
+                    <!--<p class="txt-contents">Dua bahasa yang digunakan untuk membangun struktur dan design tambilan website anda.</p>-->
+                </div>
+                <div class="content">
+                    <div class="content-icon">
+                        <a href="src/img/portfolio-2.jpg">
+                            <img class="content-img hover-shadow"  src="src/img/portfolio-2.jpg">
+                            <div class="porto-type" onclick="openModal()" >WEB</div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="content">
+                    <div class="content-icon">
+                        <a href="src/img/portfolio-3.jpg">
+                            <img class="content-img" src="src/img/portfolio-3.jpg">
+                            <div class="porto-type">MOBILE</div>
+                        </a>
+                    </div>
+            
+                </div>
+                <div class="content">
+                    <div class="content-icon">
+                        <a href="src/img/portfolio-4.jpg">
+                            <img class="content-img" src="src/img/portfolio-4.jpg">
+                            <div class="porto-type">ANDROID</div>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="content">
+                    <div class="content-icon">
+                        <a href="src/img/portfolio-5.jpg">
+                            <img class="content-img" src="src/img/portfolio-5.jpg">
+                            <div class="porto-type">IOS</div>
+                        </a>
+                    </div>
+                    
+                </div>
+            
+                <div class="content">
+                    <div class="content-icon">
+                        <a href="src/img/portfolio-6.jpg">
+                            <img class="content-img" src="src/img/portfolio-6.jpg">
+                            <div class="porto-type">IOS</div>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="content">
+                    <div class="content-icon">
+                        <a href="src/img/portfolio-7.jpg">
+                            <img class="content-img" src="src/img/portfolio-7.jpg">
+                            <div class="porto-type">IOS</div>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="content">
+                    <div class="content-icon">
+                        <a href="src/img/portfolio-8.jpg">
+                            <img class="content-img" src="src/img/portfolio-8.jpg">
+                            <div class="porto-type">ANDROID</div>
+                        </a>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- comment / bagian tambahan -->
     <div class="container">
         <div class="row center" id="comment">
@@ -135,6 +232,8 @@
                     style="width: 100%;background-color:blueviolet;">Comment</a></div>
         </div>
     </div>
+
+
 
     <!-- footer -->
     <footer class="page-footer transparent ">
