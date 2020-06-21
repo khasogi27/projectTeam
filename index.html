@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
     <link rel="stylesheet" href="src/style/style.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Pacifico|Montserrat|Gugi">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
 </head>
 
 
 <body>
-    <!-- header -->
+
     <header class="navbar-fixed mt-20">
         <nav class="z-depth-0">
             <div class="nav-wrapper">
@@ -23,6 +26,7 @@
                         <ul class="right hide-on-med-and-down mr" style="font-family: 'Montserrat'">
                             <li class="nav-button"><a href="#about">ABOUT</a></li>
                             <li class="nav-button"><a href="#profile">PROFILE</a></li>
+                            <li class="nav-button"><a href="#portofolio">POTOFOLIO</a></li>
                             <li class="nav-button"><a href="#comment">COMMENT</a></li>
                         </ul>
                     </div>
@@ -30,7 +34,8 @@
             </div>
         </nav>
     </header>
-
+    
+     
     <!-- about -->
     <div class="main title" id="about">
         <div style="font-family: 'Montserrat';">
@@ -129,6 +134,32 @@
         </div>
     </div> <br> <Br>
 
+    <!--Porto------>
+    <div class="porto-wrapper" id="portofolio">
+        <div class="container">
+            <div class="porto-heading">
+                <div class="center mt-12" class="section scrollspy" id="profile"><br>
+                    <h3 style="font-family: Gugi;">Portofolio</h3>
+                </div>
+
+                <nav class="nav-wrapper-porto">
+                    <div class="nav-porto">       
+                        <ul class="nav-porto-content">
+                            <li class="nav-button" onclick="filtering('web')"><a>Web</a></li>
+                            <li class="nav-button" onclick="filtering('android')"><a>Android</a></li>
+                            <li class="nav-button" onclick="filtering('ios')"><a>IOS</a></li>
+                            <li class="nav-button" onclick="filtering('all')"><a>All</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="porto-contents" id="porto-contents">
+
+            </div>
+        </div>
+    </div>
+
     <!-- comment / bagian tambahan -->
     <div class="container">
         <div class="row center" id="comment">
@@ -137,6 +168,8 @@
         </div>
     </div>
 
+
+
     <!-- footer -->
     <footer class="page-footer transparent ">
         <div class="footer-copyright black">
@@ -144,6 +177,13 @@
                 Digital Talent Scholarship X Progate.</div>
         </div>
     </footer>
+
+    <!--Modal Protofolio-->
+    <div class="porto-zoomin" id="porto-zoomin">
+
+    </div>
+    
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>
