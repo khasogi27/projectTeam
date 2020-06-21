@@ -265,7 +265,7 @@ nav ul a:active {
 
 .content {
     float: left;
-    width: 24%;
+    width: 25%;
     margin: 5px 5px;
 
 }
@@ -317,6 +317,7 @@ nav ul a:active {
 .content-icon:hover .porto-type {
     opacity: 1;
     color: wheat;
+    border-radius: 25px;
 }
 
 
