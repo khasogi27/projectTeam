@@ -10,6 +10,14 @@ header {
     background-color: black;
 }
 
+
+nav {
+    top: 0px;
+    background-color:black;
+    opacity: 0.6;
+
+}
+
 .navbar-fixed {
     position: absolute;
     z-index: 999999999
