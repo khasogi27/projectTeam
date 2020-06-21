@@ -19,12 +19,11 @@ nav{
 
 .navbar-fixed {
     position: absolute;
-    /*z-index: 999999999;*/
+    z-index: 99999;
 }
 
 nav ul a:active {
     background-color: #fed136;
-    border-radius: 50px;
 
 }
 
@@ -238,6 +237,15 @@ nav ul a:active {
 }
 
 /*Portofolio*/
+.nav-wrapper-porto{
+    background-color: #7f8c8d;
+    font-family: "Montserrat";
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+}
+
+
 .porto-wrapper{
     padding-bottom: 80px;
     padding-left: 5%;

@@ -1,4 +1,5 @@
-var profile =[
+//tampilan potofolio
+var portofolio =[
     ["1", "WEB", "src/img/portfolio-1.jpg",],
     ["2", "WEB", "src/img/portfolio-2.jpg"],
     ["3", "IOS", "src/img/portfolio-3.jpg"],
@@ -9,35 +10,35 @@ var profile =[
     ["8", "IOS", "src/img/portfolio-8.jpg"]
 ]
 
-function printItems(barang){
+function printItems(portofolio){
     var cards="";
 
-    for(var i=0; i<barang.length;i++){
+    for(var i=0; i<portofolio.length;i++){
         cards += `<div class="content">
                     <div class="content-icon">
-                            <img class="content-img" onclick="showModal('${profile[i][0]}')" id="imgs${profile[i][0]}"  src="${barang[i][2]}">
-                            <div class="porto-type">${barang[i][1]}</div>
+                            <img class="content-img" onclick="showModal('${portofolio[i][0]}')" id="imgs${portofolio[i][0]}"  src="${portofolio[i][2]}">
+                            <div class="porto-type">${portofolio[i][1]}</div>
                     </div>
                 </div>`
     }
-    var listProfile = document.getElementById("porto-contents")
-    listProfile.innerHTML = cards
+    var listportofolio = document.getElementById("porto-contents")
+    listportofolio.innerHTML = cards
     return cards
 }
 
-printItems(profile);
+printItems(portofolio);
 
 //Modal Image
 var modals =""
-for(var i=0;i<profile.length;i++){
+for(var i=0;i<portofolio.length;i++){
     modals  += `<!-- The Modal -->    
-            <div id="myModal${profile[i][0]}" class="zoomin">
+            <div id="myModal${portofolio[i][0]}" class="zoomin">
                 
                   <!-- The Close Button -->
-                  <span id="keluar" class="keluar" onclick="keluar(${profile[i][0]})">&times;</span>
+                  <span id="keluar" class="keluar" onclick="keluar(${portofolio[i][0]})">&times;</span>
                 
                   <!-- Modal Content (The Image) -->
-                  <img class="zoomin-content" id="modalImg${profile[i][0]}">
+                  <img class="zoomin-content" id="modalImg${portofolio[i][0]}">
                 
                   <!-- Modal Caption (Image Text) -->
                   <div id="caption"></div>
@@ -65,6 +66,26 @@ function keluar(imgId){
     //When the user clicks on <span> (x), keluar the modal 
     modal.style.display = "none";
 }
+
+
+//filtering search portofolio
+function filtering(filter){
+    if(filter == 'all'){
+        printItems(portofolio) 
+    }else{
+        var filteredItem =[]
+        for(var j=0;j<portofolio.length;j++){
+            
+            if(portofolio[j][1].toLowerCase().includes(filter.toLowerCase())){
+                filteredItem.push(portofolio[j])
+            }
+        }
+        printItems(filteredItem) 
+    }
+    
+}
+
+
 
 
 
