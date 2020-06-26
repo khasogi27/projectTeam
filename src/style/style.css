@@ -261,28 +261,28 @@ footer .footer-col {
 
 @keyframes example {
     0% {
-        left: 0%;
-        top: 0%;
+        left: 0px;
+        top: 0px;
     }
 
     25% {
-        left: 40%;
-        top: 0%;
+        left: 20px;
+        top: 0px;
     }
 
     50% {
-        left: 500%;
-        top: 0%;
+        left: 40px;
+        top: 0px;
     }
 
     75% {
-        left: 0%;
-        top: 0%;
+        left: 80px;
+        top: 0px;
     }
 
     100% {
-        left: 0%;
-        top: 0%;
+        left: 160px;
+        top: 0px;
     }
 }
 
