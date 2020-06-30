@@ -1,4 +1,4 @@
-# Digital Talent Scholarship Online Academy X Progate
+# Digital Talent Scholarship Online Academy x Progate
 ## projectTeam [Kelas PRO-2 Tim-E30 & E31](https://discord.gg/pUd6zc)
 ## Link : [DEMO](https://khasogi27.github.io/projectTeam/)
 # 
